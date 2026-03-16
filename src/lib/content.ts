@@ -27,10 +27,10 @@ export const content = {
     footer: {
       logoAlt: "wyd did 원주 로고",
       address:
-        "강원특별자치도 원주시 원일로 28 WYD 원주 교구대회 사무국",
-      email: "qna.wyd.doc.icn@gmail.com",
-      phone: "032-765-6997",
-      hours: "운영시간: 10:00 ~ 18:00",
+        "강원도 원주시 원일로 28",
+      email: "wyd2027didwonju@gmail.com",
+      phone: "033-766-4228",
+      hours: "운영시간: 09:00~18:00",
       copyright: "Copyright ⓒ 원주교구 All rights reserved",
     },
     slider: {
@@ -85,10 +85,10 @@ export const content = {
     footer: {
       logoAlt: "wyd did Wonju logo",
       address:
-        "28, Wonil-ro, Wonju-si, Gangwon-do, WYD Wonju Diocesan Committee",
-      email: "qna.wyd.doc.icn@gmail.com",
-      phone: "032-765-6997",
-      hours: "Hours: 10:00 ~ 18:00",
+        "28, Wonil-ro, Wonju-si, Gangwon-do",
+      email: "wyd2027didwonju@gmail.com",
+      phone: "033-766-4228",
+      hours: "Hours: 09:00~18:00",
       copyright: "Copyright ⓒ Diocese of Wonju All rights reserved",
     },
     slider: {
