@@ -32,7 +32,7 @@ export default function MainSlider({ locale = "kr" }: { locale?: Locale }) {
 
   const [isAutoPlay, setIsAutoPlay] = useState(true);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+
   const [panelCount, setPanelCount] = useState(0);
 
   useEffect(() => {
@@ -59,7 +59,6 @@ export default function MainSlider({ locale = "kr" }: { locale?: Locale }) {
 
       flickingInstance.on("moveStart", () => setIsAnimating(true));
       flickingInstance.on("moveEnd", () => setIsAnimating(false));
-      flickingInstance.on("changed", (e) => setCurrentIndex(e.index));
 
       const paginationInstance = new Pagination({
         type: "fraction",
@@ -144,7 +143,7 @@ export default function MainSlider({ locale = "kr" }: { locale?: Locale }) {
     >
       <div className="flicking-camera">
         <Panel>
-          <SliderItem00 />
+          <SliderItem00 locale={locale} />
         </Panel>
         {/* <Panel>
           <SliderItem03 />
@@ -153,10 +152,10 @@ export default function MainSlider({ locale = "kr" }: { locale?: Locale }) {
           <SliderItem02 />
         </Panel> */}
         <Panel>
-          <SliderItem01 />
+          <SliderItem01 locale={locale} />
         </Panel>
         <Panel>
-          <SliderItem04 />
+          <SliderItem04 locale={locale} />
         </Panel>
       </div>
       <div
@@ -177,16 +176,16 @@ export default function MainSlider({ locale = "kr" }: { locale?: Locale }) {
             <Pause
               width={40}
               height={40}
-              fill={[0, 2].includes(currentIndex) ? "#000" : "#fff"}
-              stroke={[0, 2].includes(currentIndex) ? "#000" : "#fff"}
+              fill={"#fff"}
+              stroke={"#fff"}
               strokeWidth={1}
             />
           ) : (
             <Play
               width={40}
               height={40}
-              fill={[0, 2].includes(currentIndex) ? "#000" : "#fff"}
-              stroke={[0, 2].includes(currentIndex) ? "#000" : "#fff"}
+              fill={"#fff"}
+              stroke={"#fff"}
               strokeWidth={1}
             />
           )}
@@ -198,18 +197,9 @@ export default function MainSlider({ locale = "kr" }: { locale?: Locale }) {
           className="cursor-pointer"
           onClick={handlePrevSlide}
         >
-          <ChevronLeft
-            width={48}
-            height={48}
-            stroke={[0, 2].includes(currentIndex) ? "#000" : "#fff"}
-          />
+          <ChevronLeft width={48} height={48} stroke={"#fff"} />
         </button>
-        <div
-          className={cn(
-            "flicking-pagination relative! bottom-0! w-30!",
-            [0, 2].includes(currentIndex) && "[&_span]:text-black!",
-          )}
-        />
+        <div className={cn("flicking-pagination relative! bottom-0! w-30!")} />
         <button
           type="button"
           title={t.next}
@@ -217,11 +207,7 @@ export default function MainSlider({ locale = "kr" }: { locale?: Locale }) {
           className="cursor-pointer"
           onClick={handleNextSlide}
         >
-          <ChevronRight
-            width={48}
-            height={48}
-            stroke={[0, 2].includes(currentIndex) ? "#000" : "#fff"}
-          />
+          <ChevronRight width={48} height={48} stroke={"#fff"} />
         </button>
       </div>
     </div>
