@@ -5,6 +5,12 @@ export function isLocale(value: string): value is Locale {
   return locales.includes(value as Locale);
 }
 
+export const siteConfig = {
+  name: "WYD SEOUL 2027 DID 원주",
+  url: "https://www.wyd2027did-wonju.org",
+  ogImage: "/logo.png",
+};
+
 export const content = {
   kr: {
     lang: "ko",
