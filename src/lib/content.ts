@@ -20,7 +20,7 @@ export const content = {
       ogLocale: "ko_KR",
     },
     header: {
-      logoAlt: "wyd did 원주 로고",
+      logoAlt: "wyd did 원주",
       nav: {
         home: "홈",
         calendar: "캘린더",
@@ -31,7 +31,7 @@ export const content = {
       },
     },
     footer: {
-      logoAlt: "wyd did 원주 로고",
+      logoAlt: "wyd did 원주",
       address:
         "강원도 원주시 원일로 28",
       email: "wyd2027didwonju@gmail.com",
@@ -78,7 +78,7 @@ export const content = {
       ogLocale: "en_US",
     },
     header: {
-      logoAlt: "wyd did Wonju logo",
+      logoAlt: "wyd did Wonju",
       nav: {
         home: "Home",
         calendar: "Calendar",
@@ -89,7 +89,7 @@ export const content = {
       },
     },
     footer: {
-      logoAlt: "wyd did Wonju logo",
+      logoAlt: "wyd did Wonju",
       address:
         "28, Wonil-ro, Wonju-si, Gangwon-do",
       email: "wyd2027didwonju@gmail.com",
