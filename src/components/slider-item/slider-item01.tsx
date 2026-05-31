@@ -13,14 +13,14 @@ export default function SliderItem01({ locale }: { locale: string }) {
   return (
     <div className="relative w-full h-full">
       <Image
-        src={`${R2_URL}/wonju/${mobile}_2.png`}
+        src={`${R2_URL}/wonju/${mobile}2_v2.png`}
         alt="원주2"
         fill
         className="object-fill min-[1080px]:hidden block"
         priority
       />
       <Image
-        src={`${R2_URL}/wonju/${pc}_2.png`}
+        src={`${R2_URL}/wonju/${pc}2_v2.png`}
         alt="원주2"
         fill
         className="object-fill hidden min-[1080px]:block"
