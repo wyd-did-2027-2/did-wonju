@@ -6,7 +6,7 @@ export function isLocale(value: string): value is Locale {
 }
 
 export const siteConfig = {
-  name: "WYD SEOUL 2027 DID 원주",
+  name: "2027 WYD 원주교구대회 공식 사이트",
   url: "https://www.wyd2027did-wonju.org",
   ogImage: "/logo.png",
 };
@@ -15,8 +15,10 @@ export const content = {
   kr: {
     lang: "ko",
     metadata: {
-      title: "WYD SEOUL 2027 DID 원주",
-      description: "WYD SEOUL 2027 DID 원주 공식 웹사이트",
+      title: "2027 WYD 원주교구대회 공식 사이트",
+      description: "2027 WYD 원주교구대회(DID) 일정, 공지, 관련 자료와 참가 정보를 확인하세요.",
+      keywords:
+        "2027 WYD 원주교구대회, 원주교구, WYD, DID, 교구대회, 일정, 공지사항, 관련 자료, 참가 신청, 홈스테이, 봉사자, 봉헌하기",
       ogLocale: "ko_KR",
     },
     header: {
@@ -73,8 +75,10 @@ export const content = {
   en: {
     lang: "en",
     metadata: {
-      title: "WYD SEOUL 2027 DID Wonju",
-      description: "WYD SEOUL 2027 DID Wonju Official Website",
+      title: "2027 WYD Wonju DID Official Site",
+      description: "2027 WYD Wonju DID schedules, notices, and info.",
+      keywords:
+        "2027 WYD Wonju DID, Wonju Diocese, WYD, DID, Diocesan Day, schedule, notices, resources, application, homestay, volunteer, offering",
       ogLocale: "en_US",
     },
     header: {
